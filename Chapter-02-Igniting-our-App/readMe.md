@@ -11,6 +11,7 @@
     - package.json(configuration for npm)
     - package-lock.json(keeps the track of exact version of packages or dependencies installed into our sysytem)
     - .parcel-cache
+    - browserlist(to support older browsers)
 
 ### Parcel Features:
 
