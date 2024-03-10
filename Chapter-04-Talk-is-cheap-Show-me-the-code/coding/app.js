@@ -37,14 +37,18 @@ const Header = () => {
     </div>
   );
 };
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  const { resImg, resName, cuisine, deliveryTime, ratings } = props;
+
   return (
     <div className="res-card">
-      <img
-        className="res-logo"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/fiidui71tvyumw3ntb29"
-      />
-      <h3>pizza galleria</h3>
+      <img className="res-logo" src={resImg} />
+      <div className="resDetails">
+        <h3>{resName}</h3>
+        <h4>{cuisine}</h4>
+        <h4>{deliveryTime} minutes</h4>
+        <h4>{ratings} ⭐ ratings</h4>
+      </div>
     </div>
   );
 };
@@ -58,12 +62,24 @@ const Body = () => {
         search
       </div>
       <div className="res-container">
+        <RestaurantCard
+          resImg="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/59b64f9bb67234987652437f21d379c2"
+          resName="Mojo pizza"
+          cuisine="Pizza, Italian fast food"
+          deliveryTime="20"
+          ratings="4.5"
+        />
+        <RestaurantCard
+          resImg="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/szg5m78kakinxlin6yfo"
+          resName="Biryani house"
+          cuisine="Biryani, North Indian"
+          deliveryTime="30"
+          ratings="4.1"
+        />
+        {/* <RestaurantCard />
         <RestaurantCard />
         <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard /> */}
       </div>
     </div>
   );

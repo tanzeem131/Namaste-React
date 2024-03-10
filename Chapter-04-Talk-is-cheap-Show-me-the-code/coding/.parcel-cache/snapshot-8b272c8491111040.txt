@@ -15,7 +15,7 @@
 167C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\Lexer.js133545368620466620 0
 143C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\caniuse-lite\data\features\accelerometer.js133545368599103866 0
 131C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\caniuse-lite\data\regions\CF.js133545368623247932 0
-93C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\app.js133545636477513314 0
+93C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\app.js133545752695614637 0
 116C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\process\index.js133545433582531929 0
 161C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc133545368593285411 0
 147C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\css-select\node_modules\entities\lib\index.d.ts133545368618276383 0
@@ -81,7 +81,7 @@
 124C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\dom-serializer\README.md133545368603667789 0
 130C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\lmdb\bin\download-prebuilds.js133545368625767979 0
 153C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@swc\helpers\cjs\_object_without_properties_loose.cjs133545368617511664 0
-91C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist133545642202094451 1
+91C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist133545754215187650 1
 163C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeXMLNS.js133545368617547388 0
 131C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@parcel\profiler\lib\index.d.ts133545368605049958 0
 153C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@swc\helpers\_\_async_generator_delegate\package.json133545368628911227 0
@@ -93,7 +93,7 @@
 118C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\.package-lock.json133545433585615785 0
 114C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\ordered-binary133545368604646970 1
 120C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\loose-envify\LICENSE133545366975194553 0
-102C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.html133545625789950523 0
+102C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.html133545648843598607 0
 178C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\StyleSheet.js133545368625259119 0
 120C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\ordered-binary\.idea133545368605105323 1
 108C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\escalade133545368600469818 1
@@ -107,7 +107,7 @@
 121C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\is-json\test\index.js133545368599668332 0
 109C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@trysound133545368568154432 1
 133C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\caniuse-lite\data\features\aac.js133545368595415472 0
-110C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.9e4c6fd2.css133545642201984257 0
+110C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.9e4c6fd2.css133545754215137477 0
 123C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\weak-lru-cache\index.js133545368595475392 0
 115C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\json5\README.md133545368604828505 0
 108C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\css-what133545368606773235 1
@@ -155,7 +155,7 @@
 120C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\postcss-value-parser133545368600575545 1
 104C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\.bin133545369297816044 1
 146C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\csso\node_modules\css-tree\cjs\syntax\function133545368625233956 1
-96C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\index.css133545642201518881 0
+96C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\index.css133545754214867443 0
 135C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@swc\helpers\_\_update\package.json133545368631976915 0
 125C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@swc\counter\package.json133545368596101804 0
 108C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\boolbase133545368594273026 1
@@ -5984,6 +5984,6 @@
 113C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\.bin\svgo.cmd133545369297775948 0
 113C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\.bin\svgo.ps1133545369297775948 0
 131C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\.bin\update-browserslist-db.ps1133545369297881539 0
-109C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.5baa4167.js133545636480495570 0
-113C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.5baa4167.js.map133545636480615632 0
-114C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.9e4c6fd2.css.map133545642202064438 0
+109C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.5baa4167.js133545752696974081 0
+113C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.5baa4167.js.map133545752697084058 0
+114C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\dist\index.9e4c6fd2.css.map133545754215167618 0
