@@ -13,6 +13,8 @@ body {
   border: 2px solid black;
   height: 100px;
   width: 100%;
+  margin: 30px 5px;
+  background-color: rgb(227, 153, 56);
 }
 
 .logo {
@@ -41,18 +43,12 @@ body {
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
+  margin: 50px 10px;
 }
-.search {
-  padding: 10px 10px;
-  margin: 20px 10px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .res-card {
-  height: 370px;
-  width: 330px;
+  height: 400px;
+  width: 380px;
   border-radius: 30px;
   background-color: burlywood;
 }
@@ -62,7 +58,7 @@ body {
   cursor: pointer;
 }
 .res-logo {
-  height: 65%;
+  height: 60%;
   width: 100%;
   object-fit: cover;
   border-radius: 30px;

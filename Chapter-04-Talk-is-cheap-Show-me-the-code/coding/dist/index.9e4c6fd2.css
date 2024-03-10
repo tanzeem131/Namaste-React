@@ -8,10 +8,12 @@ body {
 }
 
 .header {
+  background-color: #e39938;
   border: 2px solid #000;
   justify-content: space-between;
   width: 100%;
   height: 100px;
+  margin: 30px 5px;
   display: flex;
 }
 
@@ -42,23 +44,15 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
-  display: flex;
-}
-
-.search {
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: 20px 10px;
-  padding: 10px;
+  margin: 50px 10px;
   display: flex;
 }
 
 .res-card {
   background-color: #deb887;
   border-radius: 30px;
-  width: 330px;
-  height: 370px;
+  width: 380px;
+  height: 400px;
 }
 
 .res-card:hover {
@@ -71,7 +65,7 @@ body {
   object-fit: cover;
   border-radius: 30px;
   width: 100%;
-  height: 65%;
+  height: 60%;
 }
 
 .resDetails {
