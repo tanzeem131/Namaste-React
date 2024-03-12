@@ -15,4 +15,24 @@
       - `Render` your cards with dynamic data of restaurants
       - Use `Array.map` to render all the restaurants
 
-## [Created a FOOD HUNGER App from scratch using Functional Component 🚀 Live Project App Link 😍]()
+## [Created a FOODY WOODY App from scratch using Functional Component 🚀 Live Project App Link 😍]()
+
+    /**
+    * HEADER
+    *  - logo
+    *  - nav-items
+    * BODY
+    *  - search
+    *  - restaurant container
+    *    - restaurant card
+    *      - restaurant img
+    *      - restaurant name
+    *      - star rating
+    *      - cuisine
+    *      - delivery time
+    * FOOTER
+    *  - copyright
+    *  - links
+    *  - contact
+    *  - address
+    */
