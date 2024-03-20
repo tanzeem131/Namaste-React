@@ -15,7 +15,7 @@
       - `Render` your cards with dynamic data of restaurants
       - Use `Array.map` to render all the restaurants
 
-## [Created a FOODY WOODY App from scratch using Functional Component 🚀 Live Project App Link 😍]()
+## [Created a FOODY WOODY App from scratch using Functional Component 🚀 Live Project App Link 😍](https://lazeez-khana.netlify.app/)
 
     /**
     * HEADER

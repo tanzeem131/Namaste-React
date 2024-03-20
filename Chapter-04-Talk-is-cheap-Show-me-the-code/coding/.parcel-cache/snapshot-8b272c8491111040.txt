@@ -34,7 +34,7 @@
 176C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Selector.js133545368624667619 0
 184C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\filters.d.ts.map133545368606383931 0
 118C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\.package-lock.json133545433585615785 0
-97C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\.gitignore133545388371940291 0
+97C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\.gitignore133546607160676137 0
 116C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\clone\.npmignore133545368593496322 0
 138C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\node_modules\dom-serializer\lib\esm\foreignNames.js133545368594065924 0
 99C:\Users\tanzeem\Desktop\React-course\Chapter-04-Talk-is-cheap-Show-me-the-code\coding\package.json133545433582997412 0
