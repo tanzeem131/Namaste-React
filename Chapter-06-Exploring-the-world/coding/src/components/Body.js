@@ -14,10 +14,15 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.7923123251677&lng=86.41775261610746&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
+
     console.log(json);
 
+    console.log(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+
     setRestaurantList(
-      json.data.cards[1].card.card.gridElements.infoWithStyle.restauarants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
@@ -38,7 +43,7 @@ const Body = () => {
         </button>
       </div>
       <div className="res-container">
-        {restaurantData.map((res) => {
+        {restaurantData?.map((res) => {
           return <RestaurantCard key={res.data.id} {...res.data} />;
         })}
       </div>
