@@ -1,9 +1,8 @@
-import restaurantList from "../utils/mockData"; // Change the import name
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 
 const Body = () => {
-  const [restaurantData, setRestaurantList] = useState(restaurantList);
+  const [restaurantData, setRestaurantList] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -18,11 +17,11 @@ const Body = () => {
     console.log(json);
 
     console.log(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
 
     setRestaurantList(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
@@ -33,8 +32,8 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             //filter logic
-            const filterRestaurantList = restaurantList.filter(
-              (res) => res.data.avgRating > 4
+            const filterRestaurantList = restaurantData.filter(
+              (res) => res.info.avgRating > 4
             );
             setRestaurantList(filterRestaurantList);
           }}
@@ -44,7 +43,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {restaurantData?.map((res) => {
-          return <RestaurantCard key={res.data.id} {...res.data} />;
+          return <RestaurantCard key={res.info.id} resData={res} />;
         })}
       </div>
     </div>

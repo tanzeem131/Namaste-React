@@ -1,6 +1,7 @@
 import { CLD_ID } from "../utils/constants";
 
-const RestaurantCard = (resData) => {
+const RestaurantCard = (props) => {
+  const { resData } = props;
   const {
     cloudinaryImageId,
     name,
