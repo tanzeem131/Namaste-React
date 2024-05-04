@@ -66,9 +66,9 @@ body {
 }
 
 .res-card {
-  height: 400px;
-  width: 380px;
-  border-radius: 30px;
+  height: 320px;
+  width: 250px;
+  border-radius: 20px;
   background-image: linear-gradient(
     rgb(193, 177, 156, 0.9),
     rgba(242, 151, 32, 0.93)
@@ -80,14 +80,15 @@ body {
   cursor: pointer;
 }
 .res-logo {
-  height: 60%;
+  height: 50%;
   width: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .resDetails {
   margin-left: 20px;
   margin-top: 5px;
   line-height: 1.5;
+  font-size: smaller;
   background: transparent;
 }
