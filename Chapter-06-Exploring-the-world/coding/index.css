@@ -92,3 +92,33 @@ body {
   font-size: smaller;
   background: transparent;
 }
+
+.shimmerContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.top-rated-btn{
+  padding: 10px 10px;
+  display: flex;
+  height: 50px;
+  width: 15%;
+  background-color: #f0f0f0;
+}
+.shimmer-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin: 50px 10px;
+}
+.shimmer-card{
+  height: 320px;
+  width: 250px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  
+}
