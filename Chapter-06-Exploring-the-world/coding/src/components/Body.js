@@ -4,7 +4,11 @@ import { SWIGGY_API } from "../utils/constants";
 import Shimmer from "./shimmer";
 
 const Body = () => {
+  // local state variable = superpowerful variable
   const [restaurantData, setRestaurantList] = useState([]);
+  const [filteredRestaurants,setFilteredRestaurants] = useState([]);
+
+  const [textSearch, settextSearch] = useState("");
 
   useEffect(() => {
     fetchData();
@@ -17,16 +21,30 @@ const Body = () => {
     setRestaurantList(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    setFilteredRestaurants(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
-  if (restaurantData.length === 0){
-    return <Shimmer/>;
-  }
-
-  return (
+  // conditional rendering
+  return restaurantData.length === 0 ? <Shimmer/> :
+   (
     <div className="body">
       <div className="filter">
-        <button
+        <div className="searchContainer">
+          <input type="text" className="search" value={textSearch} onChange={(e)=>{
+            settextSearch(e.target.value);
+          }}></input>
+          <button className="search-btn" onClick={()=>{
+            const filteredRestaurants = restaurantData.filter( (res) =>
+                res.info.name.toLowerCase().includes(textSearch.toLowerCase()) ||
+                res.info.locality.toLowerCase().includes(textSearch.toLowerCase())
+            );
+            setFilteredRestaurants(filteredRestaurants);
+          }}>Search</button>
+        </div>
+        <div className="filter-div">
+          <button
           className="filter-btn"
           onClick={() => {
             //filter logic
@@ -37,10 +55,11 @@ const Body = () => {
           }}
         >
           Top Rated Restaurant
-        </button>
+          </button>
+        </div>
       </div>
       <div className="res-container">
-        {restaurantData?.map((res) => {
+        {filteredRestaurants?.map((res) => {
           return <RestaurantCard key={res.info.id} resData={res} />;
         })}
       </div>
