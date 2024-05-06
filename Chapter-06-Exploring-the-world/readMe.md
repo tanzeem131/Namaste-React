@@ -20,7 +20,7 @@ means we are not dividing software into small, well-defined modules, we use ever
 A: With `monolithic architectures`, all processes are tightly coupled and run as a single service. This means that if one process of the application experiences a spike in demand, the entire architecture must be scaled. Adding or improving a monolithic application’s features becomes more complex as the code base grows. This complexity limits experimentation and makes it difficult to implement new ideas. Monolithic architectures add risk for application availability because many dependent and tightly coupled processes increase the impact of a single process failure.
 
 With a `microservices architecture`, an application is built as independent components that run each application process as a service. These services communicate via a well-defined interface using lightweight APIs. Services are built for business capabilities and each service performs a single function. Because they are independently run, each service can be updated, deployed, and scaled to meet demand for specific functions of an application.
-![Monolith and Microservice](../Coding/Images/monolith-microservices.png)
+# [Monolith and Microservice](https://github.com/chetannada/Namaste-React/blob/main/Chapter%2006%20-%20Exploring%20the%20world/Coding/Images/monolith-microservices.png?raw=true)
 
 ## Q: Why do we need a `useEffect Hook`?
 A: `useEffect Hook` is javascript function provided by `react`. The useEffect Hook allows you to  `eliminate side effects` in your components. Some examples of side effects are: `fetching API data`, `directly updating the DOM`, and `setting up subscriptions or timers`, etc can be lead to unwarranted side-effects.
