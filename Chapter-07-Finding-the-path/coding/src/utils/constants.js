@@ -5,3 +5,6 @@ export const LOGO_URL =
 
 export const SWIGGY_API =
   "https://foodfire.onrender.com/api/restaurants?lat=23.7923123251677&lng=86.41775261610746&page_type=DESKTOP_WEB_LISTING";
+
+
+export const RESTAURANT_MENU_API ="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.7923123251677&lng=86.41775261610746&submitAction=ENTER&restaurantId=";
