@@ -3,31 +3,48 @@ import React from "react";
 class UserClass extends React.Component{
     constructor(props){
         super(props);
-        console.log("First child constructor");
-
-        this.state = {count:0};
+        this.state = {
+            userInfo:{
+                name: "name",
+                location: "location",
+            }
+        };
     }
 
-    componentDidMount(){
-        console.log("First child component did mount");
+   async componentDidMount(){
+        const data = await fetch("https://api.github.com/users/tanzeem131");
+
+        const json = data.json();
+
+        console.log(json);
+
+        // this.timer = setInterval(()=>{
+        //     console.log("Namaste react!");
+        // },1000);
+
+        this.setState({
+            userInfo: json,
+        });
     }
+
+    // componentDidUpdate(){
+    //     console.log("component did update");
+
+    // }
+
+    // componentWillUnmount(){
+    //     // clearInterval(this.timer);
+    //     console.log("component Will Unmount");
+    // }
+
     render(){
-        const {name, location}= this.props;
-        const {count}= this.state;
-
-        console.log("First child render");
-
+        const [name,location,id] = this.setState.userInfo;
         return(
             <div className="user-cards">
-                <h1>Count: {count}</h1>
-                <button onClick={()=>{
-                    this.setState( {
-                        count: this.state.count + 1,
-                    }); 
-                }}>Count Increase</button>
-                <h2>Name:{name}</h2>
+                <h2>Name: {name}</h2>
                 <h2>Location:{location}</h2>
                 <h2>Twitter:@Tanzeem_Dev</h2>
+                <h2>Github:{id}</h2>
             </div>
         )
     }
