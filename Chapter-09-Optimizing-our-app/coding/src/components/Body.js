@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { SWIGGY_API } from "../utils/constants";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   // local state variable = superpowerful variable
@@ -19,8 +20,6 @@ const Body = () => {
     const data = await fetch(SWIGGY_API);
     const json = await data.json();
 
-    console.log(json);
-
     setRestaurantList(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
@@ -28,6 +27,9 @@ const Body = () => {
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
+
+  const onlineStatus = useOnlineStatus();
+  if (onlineStatus === false) return <h1>No internet!!!!!!!!!!</h1>
 
   // conditional rendering
   return restaurantData.length === 0 ? <Shimmer/> :
@@ -54,7 +56,7 @@ const Body = () => {
             const filterRestaurantList = restaurantData.filter(
               (res) => res.info.avgRating > 4
             );
-            setRestaurantList(filterRestaurantList);
+            setFilteredRestaurants(filterRestaurantList);
           }}
         >
           Top Rated Restaurant
