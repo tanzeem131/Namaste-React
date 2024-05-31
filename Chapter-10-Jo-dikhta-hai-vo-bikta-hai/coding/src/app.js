@@ -8,7 +8,9 @@ import Error from "./components/Error";
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/shimmer";
+import Footer from "./components/Footer";
 // import Grocery from "./components/grocery";
+import Footer from "./components/Footer";
 
 const Grocery = lazy(()=>import("./components/grocery"))
 
@@ -17,6 +19,7 @@ const AppLayout = () => {
     <div className="app">
       <Header />
       <Outlet />
+      <Footer/>
     </div>
   );
 };
