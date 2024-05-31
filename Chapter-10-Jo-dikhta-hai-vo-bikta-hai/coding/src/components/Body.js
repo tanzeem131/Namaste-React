@@ -40,7 +40,7 @@ const Body = () => {
           <input type="text" className="border w-64 h-10" value={textSearch} onChange={(e)=>{
             settextSearch(e.target.value);
           }}></input>
-          <button className="p-2 bg-gray-400 rounded" onClick={()=>{
+          <button className="p-2 bg-gray-400 rounded hover:bg-gray-300 hover:transform hover:scale-95" onClick={()=>{
             const filteredRestaurants = restaurantData.filter( (res) =>
                 res.info.name.toLowerCase().includes(textSearch.toLowerCase()) ||
                 res.info.locality.toLowerCase().includes(textSearch.toLowerCase())
@@ -50,7 +50,7 @@ const Body = () => {
         </div>
         <div>
           <button
-          className="bg-green-400 font-semibold text-black rounded p-2"
+          className="bg-green-400 font-semibold text-black rounded p-2 hover:bg-yellow-500 hover:transform hover:scale-95"
           onClick={() => {
             //filter logic
             const filterRestaurantList = restaurantData.filter(
