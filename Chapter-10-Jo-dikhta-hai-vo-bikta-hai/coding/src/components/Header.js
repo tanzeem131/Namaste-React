@@ -14,14 +14,14 @@ const Header = () => {
         <h3 className="italic">laZeeZ khana</h3>
       </div>
       <div className="flex items-center font-bold text-2xl">
-        <ul className="flex flex-wrap gap-6 ">
-          <li>Online Status {onlineStatus ? "🟢":"🔴"}</li>
-          <li><Link to={"/"}>Home</Link></li>
-          <li><Link to={"/about"}>About</Link></li>
-          <li><Link to={"/contact"}>Contact</Link></li>
-          <li>Cart</li>
-          <li><Link to={"/grocery"}>Grocery</Link></li>
-          <button className="login-btn" onClick={()=>{
+        <ul className="flex flex-wrap gap-6">
+          <li className="hover:bg-orange-600 hover:rounded-lg">Online Status {onlineStatus ? "🟢":"🔴"}</li>
+          <li className="hover:bg-orange-600 hover:rounded-lg"><Link to={"/"}>Home</Link></li>
+          <li className="hover:bg-orange-600 hover:rounded-lg"><Link to={"/about"}>About</Link></li>
+          <li className="hover:bg-orange-600 hover:rounded-lg"><Link to={"/contact"}>Contact</Link></li>
+          <li className="hover:bg-orange-600 hover:rounded-lg">Cart</li>
+          <li className="hover:bg-orange-600 hover:rounded-lg"><Link to={"/grocery"}>Grocery</Link></li>
+          <button className="hover:bg-blue-700 hover:rounded-lg" onClick={()=>{
             btnReactName === "login" ? setbtnReactName('logout'): setbtnReactName('login');
           }}>{btnReactName}</button>
         </ul>
