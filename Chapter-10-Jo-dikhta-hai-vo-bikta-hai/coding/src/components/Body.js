@@ -36,7 +36,7 @@ const Body = () => {
    (
     <div className="m-4 p-4">
       <div className="flex p-4 m-4 justify-center gap-8">
-        <div className="">
+        <div>
           <input type="text" className="border w-64 h-10" value={textSearch} onChange={(e)=>{
             settextSearch(e.target.value);
           }}></input>
