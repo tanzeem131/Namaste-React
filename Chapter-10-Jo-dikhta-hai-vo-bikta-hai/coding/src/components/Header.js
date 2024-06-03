@@ -15,7 +15,7 @@ const Header = () => {
       </div>
       <div className="flex items-center font-bold text-2xl">
         <ul className="flex flex-wrap gap-6">
-          <li className="hover:bg-orange-600 hover:rounded-lg">Online Status {onlineStatus ? "🟢":"🔴"}</li>
+          <li>Online Status {onlineStatus ? "🟢":"🔴"}</li>
           <li className="hover:bg-orange-600 hover:rounded-lg"><Link to={"/"}>Home</Link></li>
           <li className="hover:bg-orange-600 hover:rounded-lg"><Link to={"/about"}>About</Link></li>
           <li className="hover:bg-orange-600 hover:rounded-lg"><Link to={"/contact"}>Contact</Link></li>
