@@ -6,10 +6,8 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
-  // local state variable = superpowerful variable
   const [restaurantData, setRestaurantList] = useState([]);
   const [filteredRestaurants,setFilteredRestaurants] = useState([]);
-
   const [textSearch, settextSearch] = useState("");
 
   useEffect(() => {
@@ -31,7 +29,6 @@ const Body = () => {
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) return <h1>No internet!!!!!!!!!!</h1>
 
-  // conditional rendering
   return restaurantData.length === 0 ? <Shimmer/> :
    (
     <div className="m-4 p-4">
@@ -52,7 +49,6 @@ const Body = () => {
           <button
           className="bg-green-400 font-semibold text-black rounded p-2 hover:bg-yellow-500 hover:transform hover:scale-95"
           onClick={() => {
-            //filter logic
             const filterRestaurantList = restaurantData.filter(
               (res) => res.info.avgRating > 4
             );
