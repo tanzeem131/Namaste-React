@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard,{withPromotedLabel} from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import { SWIGGY_API } from "../utils/constants";
 import Shimmer from "./shimmer";
@@ -10,6 +10,8 @@ const Body = () => {
   const [filteredRestaurants,setFilteredRestaurants] = useState([]);
   const [textSearch, settextSearch] = useState("");
 
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -17,6 +19,7 @@ const Body = () => {
   const fetchData = async () => {
     const data = await fetch(SWIGGY_API);
     const json = await data.json();
+    console.log(json);
 
     setRestaurantList(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -60,9 +63,12 @@ const Body = () => {
         </div>
       </div>
       <div className="flex flex-wrap gap-8">
-        {filteredRestaurants?.map((res) => {
-          return <Link key={res.info.id} to={"/restaurantmenu/" + res.info.id}><RestaurantCard resData={res} /></Link>;
-        })}
+        {filteredRestaurants?.map((res) => (
+          <Link key={res.info.id} to={"/restaurantmenu/" + res.info.id}>
+            { res.info.veg ? <RestaurantCardPromoted resData={res}/> 
+            : <RestaurantCard resData={res} /> }
+          </Link>
+        ))}
       </div>
     </div>
   );
