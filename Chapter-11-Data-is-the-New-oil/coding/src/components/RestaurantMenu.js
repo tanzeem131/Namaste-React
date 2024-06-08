@@ -9,6 +9,8 @@ const RestaurantMenu = () => {
     const resInfo = useRestaurantMenu(resId);
     const [showIndex,setShowIndex]=useState(null);
 
+    const dummy = "props drilling"
+
     if  (resInfo === null) return <Shimmer/>;
 
     const {name,cuisines,costForTwoMessage,locality} = resInfo?.cards[2]?.card?.card?.info;
@@ -22,11 +24,11 @@ const RestaurantMenu = () => {
     return (
     <div className="text-center">
         <h1 className="text-3xl font-bold my-6">{name}</h1>
-        <h2 className="text-emerald-500 font-semibold">{cuisines.join(" | ")} <a className="mx-2 bg-yellow-300 p-2 rounded-xl font-semibold text-black">{costForTwoMessage}</a></h2>
+        <h2 className="text-emerald-500 font-semibold">{cuisines.join(" | ")}<a className="mx-2 bg-yellow-300 p-2 rounded-xl font-semibold text-black">{costForTwoMessage}</a></h2>
         <h2 className="font-semibold">{locality}</h2>
         {categories.map((category,index)=>(
             //Controlled component
-            <RestaurantMenuList key={category?.card?.card?.title} data={category.card?.card} showItem={ index === showIndex ? true : false} setShowIndex={()=>handleSetShowIndex(index)}/>
+            <RestaurantMenuList key={category?.card?.card?.title} data={category.card?.card} showItem={ index === showIndex ? true : false} setShowIndex={()=>handleSetShowIndex(index)} dummy={dummy}/>
         ))}
     </div>
   )

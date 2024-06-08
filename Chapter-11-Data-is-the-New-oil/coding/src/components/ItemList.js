@@ -1,6 +1,7 @@
 import { CLD_ID } from "../utils/constants";
 
-const ItemList =({items})=>{
+const ItemList =({items,dummy})=>{
+    console.log(dummy);
     return(
         <div>{items.map((item)=>(
             <div key={item?.card?.info?.id} className="flex p-2 m-2 gap-32 justify-between border-gray-200 border-b-4 py-5">
