@@ -1,5 +1,8 @@
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 
 const Footer = ()=>{
+    const {loggedInUser}= useContext(UserContext);
     return(
         <div className="bg-orange-400 h-56 p-4 m-2 shadow-2xl">
             <div className="flex justify-evenly">
@@ -11,9 +14,10 @@ const Footer = ()=>{
                     <a className="hover:font-semibold px-4 w-4" href="/support">Support</a>
                 </div>
                 <div className="flex flex-col my-1 py-1 gap-2">
-                    <a className="hover:font-semibold px-4 w-4" href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a className="hover:font-semibold px-4 w-4" href="https://twitter.com/Tanzeem_Dev" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a className="hover:font-semibold px-4 w-4" href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a className="hover:font-semibold px-4" href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a className="hover:font-semibold px-4" href="https://twitter.com/Tanzeem_Dev" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a className="hover:font-semibold px-4" href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a className="hover:font-bold font-bold px-4" href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer">{loggedInUser}</a>
                 </div>
             </div>
         </div>
