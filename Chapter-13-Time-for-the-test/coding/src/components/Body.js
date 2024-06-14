@@ -38,7 +38,7 @@ const Body = () => {
     <div className="m-4 p-4">
       <div className="flex p-4 m-4 justify-center gap-8">
         <div>
-          <input type="text" className="border w-64 h-10 p-2" value={textSearch} onChange={(e)=>{
+          <input type="text" className="border w-64 h-10 p-2" data-testid="SearchInput" value={textSearch} onChange={(e)=>{
             settextSearch(e.target.value);
           }}></input>
           <button className="p-2 bg-gray-400 rounded hover:bg-gray-300 hover:transform hover:scale-95" onClick={()=>{
@@ -50,7 +50,7 @@ const Body = () => {
           }}>Search</button>
         </div>
         <div>
-          <button
+          <button data-testid="TopRatedRestaurant"
           className="bg-green-400 font-semibold text-black rounded p-2 hover:bg-yellow-500 hover:transform hover:scale-95"
           onClick={() => {
             const filterRestaurantList = restaurantData.filter(

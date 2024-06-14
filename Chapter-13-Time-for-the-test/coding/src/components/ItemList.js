@@ -10,7 +10,7 @@ const ItemList =({items})=>{
     };
     return(
         <div>{items.map((item)=>(
-            <div key={item?.card?.info?.id} className="flex p-2 m-2 gap-32 justify-between border-gray-200 border-b-4 py-5">
+            <div data-testid="foodItems" key={item?.card?.info?.id} className="flex p-2 m-2 gap-32 justify-between border-gray-200 border-b-4 py-5">
                 <div className="w-10/12 text-left">
                     <div className="py-2">
                         <span>{item?.card?.info?.name}</span>
