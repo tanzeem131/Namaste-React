@@ -2,6 +2,7 @@ import { CLD_ID } from "../utils/constants";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  console.log(resData);
   const {
     cloudinaryImageId,
     name,
@@ -28,11 +29,11 @@ const RestaurantCard = (props) => {
 
 //Higher Order COMPONENT
 
-export const withPromotedLabel = (RestaurantCard) =>{
+export const WithPromotedLabel = (RestaurantCard) =>{
   return(props)=>{
     return(
       <div>
-        <label className="absolute z-20 bg-green-600 text-white p-1 m-1 rounded-lg">Pure Veg</label>
+        <label className="absolute z-20 bg-green-600 text-white p-1 m-1 rounded-lg">Open</label>
         <RestaurantCard {...props}/>
       </div>
     );
