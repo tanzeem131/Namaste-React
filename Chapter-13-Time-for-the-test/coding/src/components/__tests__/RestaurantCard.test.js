@@ -2,8 +2,9 @@ import "@testing-library/react"
 import "@testing-library/jest-dom"
 import { render,screen } from "@testing-library/react";
 import RestaurantCard from "../RestaurantCard";
-import { MOCK_DATA } from "../mocks/resCardMockData";
+import MOCK_DATA from "../mocks/resCardMockData.json";
 import { WithPromotedLabel } from "../RestaurantCard";
+
 
 it("Should render the restaurantcard component",()=>{
     render(<RestaurantCard resData={MOCK_DATA}/>);

@@ -2,6 +2,9 @@ import { CLD_ID } from "../utils/constants";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  if (!resData || !resData.info) {
+    return <div data-testid="resCard">Data is not available</div>;
+  }
   const {
     cloudinaryImageId,
     name,

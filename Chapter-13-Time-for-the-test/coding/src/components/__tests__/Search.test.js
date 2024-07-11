@@ -2,7 +2,7 @@ import "@testing-library/jest-dom"
 import "@testing-library/react"
 import { fireEvent, render,screen } from "@testing-library/react"
 import Body from "../Body"
-import { MOCK_RES_LIST_DATA } from "../mocks/mockResListData";
+import MOCK_RES_LIST_DATA from "../mocks/mockResListData.json";
 import { act } from "react";
 import { BrowserRouter } from "react-router-dom";
 
@@ -15,7 +15,7 @@ global.fetch = jest.fn(()=>{
     });
 });
 
-it("Should search for momo input",async ()=>{
+it("Should search for Pizza input",async ()=>{
     await act(async() => render(
        <BrowserRouter>
         <Body/>;
@@ -26,7 +26,7 @@ it("Should search for momo input",async ()=>{
 
     const SearchInput = screen.getByTestId("SearchInput");
 
-    fireEvent.change(SearchInput,{target:{value:"momo"}});
+    fireEvent.change(SearchInput,{target:{value:"pizza"}});
 
     fireEvent.click(SearchBtn)
 
