@@ -19,7 +19,7 @@ const Header = () => {
     <div className="grid grid-cols-12 flex-wrap rounded-3xl bg-gradient-to-r from-[#FE9234] to-[#F15700] justify-between lg:gap-[30%] md:gap-[15%] sm:gap-[5%] p-4 m-2 shadow-2xl">
       <div className="flex flex-col md:p-0 lg:p-0 sm:p-0 vs:p-2 content-center justify-start font-bold items-center col-span-2">
         <img className="w-[90px] hover:-rotate-12" src={LOGO_URL} />
-        <h3 className="italic lg:w-[90px] md:w-[90px] sm:w-16 text-[13px] text-wrap vs:w-12">laZeeZ khana</h3>
+        <h3 className="italic lg:w-[90px] md:w-[90px] sm:w-16 text-[13px] text-wrap vs:w-12">UrbanTastes</h3>
       </div>
       <div className="flex w-fit px-1 justify-end items-center font-bold lg:text-2xl md:text-2xl sm:text-lg col-span-10">
         <ul className="flex flex-wrap px-1 gap-6">
