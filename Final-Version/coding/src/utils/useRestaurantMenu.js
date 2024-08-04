@@ -1,22 +1,32 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import { RESTAURANT_MENU_API } from "../utils/constants";
 
+const useRestaurantMenu = (resId, lat, lng) => {
+  const [resInfo, setResInfo] = useState(null);
+  const [error, setError] = useState(null);
 
-const useRestaurantMenu = (resId) => {
+  useEffect(() => {
+    if (lat && lng) {
+      fetchData();
+    }
+  }, [lat, lng]);
 
-    const [resInfo,setResInfo] = useState(null);
-    
-    useEffect(()=>{
-        fetchData();
-    },[]);
+  const fetchData = async () => {
+    try {
+      const url =
+        RESTAURANT_MENU_API.replace("{lat}", lat).replace("{lng}", lng) + resId;
+      const data = await fetch(url);
+      if (!data.ok) {
+        throw new Error(`HTTP error! status: ${data.status}`);
+      }
+      const json = await data.json();
+      setResInfo(json.data);
+    } catch (error) {
+      setError(error.message);
+    }
+  };
 
-    const fetchData = async()=>{
-        const data = await fetch(RESTAURANT_MENU_API+ resId);
-        const json = await data.json();
-        setResInfo(json.data);
-    };
-
-    return resInfo;
+  return { resInfo, error };
 };
 
 export default useRestaurantMenu;

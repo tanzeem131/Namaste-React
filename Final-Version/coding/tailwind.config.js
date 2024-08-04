@@ -1,23 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}",
-],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-        scale: {
-          '90': '0.9',
-        },
+      scale: {
+        90: "0.9",
+      },
     },
     screens: {
-      "vs":'320px',
-      'sm': '576px',
-      'md': '960px',
-      'lg': '1440px',
+      vs: "340px",
+      sm: "576px",
+      md: "960px",
+      lg: "1440px",
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
-
+};
