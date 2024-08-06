@@ -24,7 +24,7 @@ const Cart = () => {
           <h1>Your cart is empty! Add your favourate foods</h1>
         )}
       </div>
-      <div className="w-6/12 mb-60">
+      <div className="w-6/12 mx-auto mb-72">
         <ItemList items={cartItems} />
       </div>
     </div>
