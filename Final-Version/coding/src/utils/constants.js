@@ -7,5 +7,11 @@ export const LOGO_URL =
 export const SWIGGY_API =
   "https://foodfire.onrender.com/api/restaurants?lat={lat}&lng={lng}&page_type=DESKTOP_WEB_LISTING";
 
+// export const RESTAURANT_MENU_API =
+//   "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat={lat}&lng={lng}&submitAction=ENTER&restaurantId=";
+
+// export const RESTAURANT_MENU_API =
+//   "https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat={lat}&lng={lng}&&submitAction=ENTER&restaurantId=";
+
 export const RESTAURANT_MENU_API =
-  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat={lat}&lng={lng}&submitAction=ENTER&restaurantId=";
+  "https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat={lat}&lng={lng}&submitAction=ENTER&restaurantId=";
