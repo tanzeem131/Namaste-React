@@ -6,7 +6,7 @@ import Shimmer from "./shimmer";
 const Body = () => {
   // local state variable = superpowerful variable
   const [restaurantData, setRestaurantList] = useState([]);
-  const [filteredRestaurants,setFilteredRestaurants] = useState([]);
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
   const [textSearch, settextSearch] = useState("");
 
@@ -26,35 +26,50 @@ const Body = () => {
     );
   };
 
-  // conditional rendering
-  return restaurantData.length === 0 ? <Shimmer/> :
-   (
+  return restaurantData.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <div className="searchContainer">
-          <input type="text" className="search" value={textSearch} onChange={(e)=>{
-            settextSearch(e.target.value);
-          }}></input>
-          <button className="search-btn" onClick={()=>{
-            const filteredRestaurants = restaurantData.filter( (res) =>
-                res.info.name.toLowerCase().includes(textSearch.toLowerCase()) ||
-                res.info.locality.toLowerCase().includes(textSearch.toLowerCase())
-            );
-            setFilteredRestaurants(filteredRestaurants);
-          }}>Search</button>
+          <input
+            type="text"
+            className="search"
+            value={textSearch}
+            onChange={(e) => {
+              settextSearch(e.target.value);
+            }}
+          ></input>
+          <button
+            className="search-btn"
+            onClick={() => {
+              const filteredRestaurants = restaurantData.filter(
+                (res) =>
+                  res.info.name
+                    .toLowerCase()
+                    .includes(textSearch.toLowerCase()) ||
+                  res.info.locality
+                    .toLowerCase()
+                    .includes(textSearch.toLowerCase())
+              );
+              setFilteredRestaurants(filteredRestaurants);
+            }}
+          >
+            Search
+          </button>
         </div>
         <div className="filter-div">
           <button
-          className="filter-btn"
-          onClick={() => {
-            //filter logic
-            const filterRestaurantList = restaurantData.filter(
-              (res) => res.info.avgRating > 4
-            );
-            setRestaurantList(filterRestaurantList);
-          }}
-        >
-          Top Rated Restaurant
+            className="filter-btn"
+            onClick={() => {
+              //filter logic
+              const filterRestaurantList = restaurantData.filter(
+                (res) => res.info.avgRating > 4
+              );
+              setRestaurantList(filterRestaurantList);
+            }}
+          >
+            Top Rated Restaurant
           </button>
         </div>
       </div>
