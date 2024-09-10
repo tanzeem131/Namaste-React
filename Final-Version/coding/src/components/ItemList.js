@@ -37,10 +37,10 @@ const ItemList = ({ items }) => {
               alt={item?.card?.info?.name}
             />
             <button
-              className="text-white hover:text-black hover:bg-white hover:border-[0.5px] hover:border-black bg-amber-500 p-2 mx-auto md:mx-0 my-2 md:my-4 rounded-lg font-bold text-lg absolute bottom-0 md:bottom-auto md:top-1/2 lg:top-auto lg:bottom-8 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:translate-y-full"
+              className="text-white hover:text-black hover:bg-amber-600 hover:border-[0.5px] hover:border-black bg-amber-500 py-1 px-4 mx-auto md:mx-0 my-2 md:my-4 rounded-lg font-bold text-xl absolute bottom-0 md:bottom-auto md:top-1/2 lg:top-auto lg:bottom-8 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:translate-y-full"
               onClick={() => handleAddItem(item)}
             >
-              ADD
+              +
             </button>
           </div>
         </div>

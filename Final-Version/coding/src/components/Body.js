@@ -55,15 +55,31 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="m-4 p-4">
-      <div className="flex p-4 m-4 justify-center gap-8">
-        <div>
+      <div className="flex flex-wrap p-4 m-4 justify-center gap-8">
+        <div className="flex flex-nowrap">
           <input
             type="text"
             className="border w-64 h-10 p-2"
             data-testid="SearchInput"
             value={textSearch}
             onChange={(e) => {
-              settextSearch(e.target.value);
+              const searchQuery = e.target.value.toLowerCase();
+              settextSearch(searchQuery);
+
+              const filteredRestaurants = restaurantData.filter(
+                (res) =>
+                  res.info.name
+                    .toLowerCase()
+                    .includes(textSearch.toLowerCase()) ||
+                  res.info.cuisines
+                    .join()
+                    .toLowerCase()
+                    .includes(textSearch.toLowerCase()) ||
+                  res.info.locality
+                    .toLowerCase()
+                    .includes(textSearch.toLowerCase())
+              );
+              setFilteredRestaurants(filteredRestaurants);
             }}
           ></input>
           <button
@@ -72,6 +88,10 @@ const Body = () => {
               const filteredRestaurants = restaurantData.filter(
                 (res) =>
                   res.info.name
+                    .toLowerCase()
+                    .includes(textSearch.toLowerCase()) ||
+                  res.info.cuisines
+                    .join()
                     .toLowerCase()
                     .includes(textSearch.toLowerCase()) ||
                   res.info.locality
@@ -84,18 +104,42 @@ const Body = () => {
             Search
           </button>
         </div>
-        <div>
+        <div className="flex gap-2">
           <button
             data-testid="TopRatedRestaurant"
             className="bg-green-400 font-semibold text-black rounded p-2 hover:bg-yellow-500 hover:transform hover:scale-95"
             onClick={() => {
+              const filterRestaurantList = restaurantData
+                .filter((res) => res.info.avgRating > 4)
+                .sort((a, b) => b.info.avgRating - a.info.avgRating);
+              setFilteredRestaurants(filterRestaurantList);
+            }}
+          >
+            Best restaurants
+          </button>
+          <button
+            data-testid="TopRatedRestaurant"
+            className="bg-green-400 font-semibold text-black rounded p-2 hover:bg-yellow-500 hover:transform hover:scale-95"
+            onClick={() => {
+              const filterRestaurantListVeg = restaurantData.filter(
+                (res) => res.info.veg === true
+              );
+              setFilteredRestaurants(filterRestaurantListVeg);
+            }}
+          >
+            Veg
+          </button>
+          <button
+            data-testid="TopRatedRestaurant"
+            className="bg-red-500 font-semibold text-black rounded p-2 hover:bg-yellow-500 hover:transform hover:scale-95"
+            onClick={() => {
               const filterRestaurantList = restaurantData.filter(
-                (res) => res.info.avgRating > 4
+                (res) => !res.info.veg
               );
               setFilteredRestaurants(filterRestaurantList);
             }}
           >
-            Top Rated Restaurant
+            Non-Veg
           </button>
         </div>
       </div>

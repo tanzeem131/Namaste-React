@@ -7,6 +7,13 @@ const ItemlistShimmer = () => {
         <div className="flex justify-between cursor-pointer bg-gray-300">
           <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
           <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
+          <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
+          <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
+          <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
+          <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
+          <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
+          <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
+          <span className="font-bold bg-gray-300 lg:text-lg md:text-lg sm:text-sm vs:text-[12px]"></span>
         </div>
       </div>
     </div>
