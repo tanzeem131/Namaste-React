@@ -34,11 +34,11 @@ const Cart = () => {
           <MdDeleteForever />
         </button>
       </div>
-      <div className="text-center lg:justify-end md:justify-end sm:justify-center vs:justify-center font-bold lg:text-4xl md:text-4xl sm:text-2xl vs:text-xl p-4 mx-4 mb-40">
-        {cartItems.length === 0 && (
+      {cartItems.length === 0 && (
+        <div className="text-center lg:justify-end md:justify-end sm:justify-center vs:justify-center font-bold lg:text-4xl md:text-4xl sm:text-2xl vs:text-xl p-4 mx-4 mb-40">
           <h1>Your cart is empty! Add your favourite foods</h1>
-        )}
-      </div>
+        </div>
+      )}
       <div className="w-6/12 mx-auto ">
         <ItemList items={cartItems} />
       </div>
